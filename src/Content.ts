@@ -33,6 +33,15 @@ export default class Content {
         // Tetszőleges html teg-ek és attribútumok beépítése:
         res.write("<span style='color: blue;'><i>Színes és dőlt Hello World!'</i></span>\n");
 
+        res.write("String");
+        let employeeName: string = "John Smith";
+
+        res.write("Boolean");
+        let isPresent: boolean = true;
+
+        res.write("Szám");
+        let first: number = 123;
+
         res.write("</pre></form></body></html>");
         res.end();
     }
