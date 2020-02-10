@@ -35,15 +35,15 @@ export default class Content {
 
         res.write("String");
         let employeeName: string = "John Smith";
-        res.write(`${employeeName}`);
+        res.write(`\n${employeeName}`);
 
-        res.write("Boolean");
+        res.write("\n\nBoolean");
         let isPresent: boolean = true;
-        res.write(`${isPresent}`);
+        res.write(`\n${isPresent}`);
 
-        res.write("Szám");
+        res.write("\n\nSzám");
         let first: number = 123;
-        res.write(`${first}`);
+        res.write(`\n${first}`);
 
         res.write("</pre></form></body></html>");
         res.end();
